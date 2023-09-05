@@ -1,0 +1,39 @@
+@use '../../../../scss/' as *;
+.wrapper {
+    position: relative;
+    z-index: 1000;
+    margin: 0 1rem 4.6rem 1rem;
+
+    .top {
+        position: absolute;
+        top: 0px;
+        color: #fff;
+        padding-left: 10px;
+        width: 294px;
+        height: 28px;
+        background: rgba(0, 0, 0, 0.7);
+        line-height: 28px;
+        font-weight: 300;
+        h3 {
+            font-size: 2rem;
+        }
+    }
+
+    .bottom {
+        position: absolute;
+        padding-left: 10px;
+        bottom: 0px;
+        color: #ec9022;
+        font-size: 1.3rem;
+        width: 294px;
+        font-weight: 200;
+        height: 28px;
+        background: rgba(0, 0, 0, 0.7);
+        h3 {
+            font-size: 2rem;
+        }
+        // @include tablet {
+        //     width: 100%;
+        // }
+    }
+}

@@ -1,0 +1,89 @@
+@use '../../../../scss/' as *;
+.wrapper {
+    width: 100%;
+
+    .inner {
+        width: 100%;
+        position: relative;
+
+        .img {
+            width: 288px;
+            height: 360px;
+            cursor: pointer;
+            img {
+                width: 288px;
+                height: 192px;
+            }
+            &:hover {
+                .action {
+                    display: block;
+                }
+                .des {
+                    .infor-des {
+                        display: none;
+                    }
+                }
+
+                .hover-des {
+                    display: block;
+                }
+            }
+            .action {
+                position: absolute;
+                top: 136px;
+                text-transform: uppercase;
+                background: rgba(0, 0, 0, 0.7);
+                width: 288px;
+                padding-left: 1rem;
+                display: none;
+                // animation: fadeIn 0.5s linear;
+                z-index: 1000;
+                .cart {
+                    margin-top: 0.2rem;
+                    font-size: 1.1rem;
+                    color: #fff;
+                    // animation: fadeIn 0.5s linear;
+                    // display: none;
+
+                    .icon {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+            .id-des {
+                font-size: 1.1rem;
+                font-weight: 200;
+            }
+            .des {
+                margin-top: -1rem;
+                .date-des {
+                    font-size: 1.1rem;
+                    font-weight: 200;
+                }
+                .infor-des {
+                    z-index: 1000;
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                    // display: none;
+                }
+            }
+            .hover-des {
+                display: none;
+                .hover-infor-des {
+                    z-index: 1000;
+                    font-size: 1.3rem;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            height: 60px;
+        }
+        to {
+            height: 30px;
+        }
+    }
+}

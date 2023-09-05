@@ -1,0 +1,26 @@
+@use '../../../scss/' as *;
+.wrapper {
+    position: relative;
+
+    .bottom {
+        position: absolute;
+        padding-left: 10px;
+        bottom: 0px;
+        color: #ec9022;
+        width: 294px;
+        font-weight: 200;
+        background: rgba(0, 0, 0, 0.7);
+        .name {
+            padding-top: 0.5rem;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+        h3 {
+            font-size: 1.3rem;
+        }
+
+        .title {
+            color: #fff;
+        }
+    }
+}

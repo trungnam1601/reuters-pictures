@@ -1,0 +1,19 @@
+@use '../../../scss/' as *;
+.wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    span {
+        display: block;
+        color: #ccc;
+        font-size: 1.3rem;
+        font-weight: 200;
+        margin-right: 2rem;
+        cursor: pointer;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

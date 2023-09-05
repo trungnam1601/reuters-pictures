@@ -1,0 +1,12 @@
+@use '../../scss/' as *;
+.wrapper {
+    margin-top: 1.9rem;
+    margin-left: 4rem;
+    .title {
+        font-size: 2rem;
+        color: $color;
+        font-weight: 200;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+}

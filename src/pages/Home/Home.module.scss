@@ -1,0 +1,123 @@
+@use '../../scss/' as *;
+.wrapper {
+    width: 100%;
+    margin-right: 2rem;
+    margin-top: 1.9rem;
+    margin-left: 4rem;
+    @include tablet {
+        margin-left: 2rem;
+    }
+    .inner {
+        width: 100%;
+        .slide-bar {
+            width: 100%;
+            display: flex;
+            .slide {
+                z-index: 1;
+                width: 50%;
+
+                h3 {
+                    font-size: 2.8rem;
+                    font-weight: 200;
+                    color: #8c8c8c;
+                }
+            }
+            .in-dept {
+                z-index: 1000;
+                width: 50%;
+                h3 {
+                    font-size: 2.8rem;
+                    margin-left: 1rem;
+                    font-weight: 200;
+                    color: #8c8c8c;
+                }
+                .group {
+                    // display: flex;
+                    // flex-wrap: wrap;
+                }
+            }
+        }
+        .content {
+            position: relative;
+            .all-package {
+                font-size: 2.8rem;
+                font-weight: 100;
+                color: $color;
+                left: 50%;
+                transform: translateX(-50%);
+                display: block;
+                position: absolute;
+                &:hover {
+                    border-bottom: 1px solid $color;
+                }
+            }
+            .item {
+                margin-top: 1rem;
+                .title {
+                    margin-bottom: 2rem;
+                    font-size: 2.6rem;
+                    font-weight: 200;
+
+                    .view-all {
+                        font-size: 1.6rem;
+                        cursor: pointer;
+                        color: $color;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+        .browser-topic {
+            width: 100%;
+            margin-right: 3rem;
+            @include tablet {
+                width: 100%;
+                height: 100%;
+                margin-right: 1rem;
+            }
+            span {
+                width: 1274px;
+                display: block;
+                font-size: 2.6rem;
+                text-align: center;
+                font-weight: 300;
+                color: #333;
+                @include tablet {
+                    width: 780px;
+                }
+            }
+            .item-list {
+                @include tablet {
+                    width: 100%;
+                }
+                .item {
+                    width: 1274px;
+                    display: flex;
+                    justify-content: center;
+                    // flex-wrap: wrap;
+                    margin: 2rem 0;
+                    @include tablet {
+                        width: 700px;
+                    }
+                    // @include tablet {
+                    //     margin: 1rem 0;
+                    //     width: 830px;
+                    // }
+                    .link {
+                        font-size: 2rem;
+                        color: $color;
+                        text-transform: uppercase;
+                        width: 220px;
+                        height: 24px;
+                        font-weight: 300;
+                        margin: 0.2rem 0;
+                        @include tablet {
+                            width: 160px;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

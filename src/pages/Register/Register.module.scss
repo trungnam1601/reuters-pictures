@@ -1,0 +1,113 @@
+@use '../../scss/' as *;
+.wrapper {
+    margin-bottom: 5rem;
+    margin-top: 1.9rem;
+    margin-left: 4rem;
+    .inner {
+        width: 550px;
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        .form {
+            width: 100%;
+            position: relative;
+            .rules {
+                p {
+                    font-size: 13px;
+                }
+                .privacy {
+                    margin-left: 2rem;
+                    position: relative;
+                    input {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 1.6rem;
+                    }
+                    span {
+                        position: absolute;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+
+                        .link {
+                            margin-left: 0.6rem;
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            border-bottom: 1px solid #333;
+
+                            &:hover {
+                                color: #5db8fe;
+                                border-color: #5db8fe;
+                            }
+                        }
+                    }
+                }
+            }
+            .personal-infor {
+                width: 100%;
+                margin-top: 2rem;
+                h3 {
+                    font-size: 1.3rem;
+                    padding: 2px 0;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+            .marketing-preferences {
+                margin-top: 2rem;
+                h3 {
+                    font-size: 1.3rem;
+                    padding: 2px 0;
+                    border-bottom: 1px solid #ccc;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                    color: $text-color;
+                    font-weight: 400;
+                    .link {
+                        margin-left: 0.6rem;
+                        color: #5db8fe;
+                        border-bottom: 1px solid #5db8fe;
+                    }
+                }
+                .rate {
+                    display: flex;
+                    margin-left: 2rem;
+                    input {
+                        width: 20px;
+                        height: 20px;
+                    }
+                    p {
+                        margin-left: 1rem;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        &:hover {
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+            .address-infor,
+            .financial-information,
+            .login-infor {
+                margin-top: 3rem;
+                h3 {
+                    font-size: 1.3rem;
+                    padding: 2px 0;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+            .btn {
+                position: relative;
+                right: -450px;
+                top: 10px;
+                text-transform: uppercase;
+                padding: 10px 20px;
+                color: #fff;
+                background-color: $primary-color;
+                border-radius: 10px;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
